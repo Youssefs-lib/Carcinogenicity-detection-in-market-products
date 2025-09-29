@@ -4,16 +4,17 @@
 
 ---
 
-## 📖 Project Overview  
+## 📖 Project Overview  (Still in development/early phase)
 
 This project builds a **deep learning model** to predict whether a compound has **carcinogenic potential**, based on its **SMILES chemical formula**.  
-
+SMILES → descriptors → Deep Learning
 It leverages:  
 - **RDKit** → Molecular descriptor calculation (`MolecularWeight`, `NumHeavyAtoms`)  
 - **Keras Sequential Model** → Multi-layer Perceptron with Dropout & LeakyReLU  
 - **Tox21-style dataset** → `class_tox21` as binary label  
-- **Evaluation Metrics:** Accuracy, Precision, F1 Score  
-
+- **Evaluation Metrics:** Accuracy, Precision, F1 Score
+  
+(the idea is there, still needs tuning and more varied chemicals datasets to improve detection)
 ✅ **Test Accuracy:** `82.4%`  
 ✅ **Precision:** `43.3%`  
 ✅ **F1 Score:** `58.7%`  
@@ -72,7 +73,7 @@ It leverages:
 
 We applied the trained model on a **real dataset of food & vape additives**.  
 
-**Predictions Example:**  
+**Predictions Example:**  in plots safe is labeled as green, suspicious compounds are yellow and high risk ones are labeled in red
 
 | Compound             | MolecularWeight | NumHeavyAtoms | Predicted Risk |
 |----------------------|-----------------|---------------|----------------|
