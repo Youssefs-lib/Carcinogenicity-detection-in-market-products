@@ -84,5 +84,7 @@ We applied the trained model on a **real dataset of food & vape additives**.
 | Malic Acid           | 134.08          | 9             | 0.241 (Susp.)  |
 
 ⚠️ **Interpretation:** While most compounds showed low predicted risk, certain additives (e.g., *Monoglyceride, Malic Acid*) were flagged as *suspicious*.  
+<img width="781" height="462" alt="example of cancer causing product" src="https://github.com/user-attachments/assets/7fd966fd-7317-4ccb-963e-7564d8a72ae2" />
+
 
 ---
