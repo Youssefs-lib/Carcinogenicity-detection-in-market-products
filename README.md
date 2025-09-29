@@ -4,7 +4,7 @@
 
 ---
 
-## 📖 Project Overview  (Still in development/early phase)
+## Project Overview  (Still in development/early phase)
 
 This project builds a **deep learning model** to predict whether a compound has **carcinogenic potential**, based on its **SMILES chemical formula**.  
 SMILES → descriptors → Deep Learning
@@ -15,13 +15,13 @@ It leverages:
 - **Evaluation Metrics:** Accuracy, Precision, F1 Score
   
 (the idea is there, still needs tuning and more varied chemicals datasets to improve detection)
-✅ **Test Accuracy:** `82.4%`  
-✅ **Precision:** `43.3%`  
-✅ **F1 Score:** `58.7%`  
+ **Test Accuracy:** `82.4%`  
+ **Precision:** `43.3%`  
+ **F1 Score:** `58.7%`  
 
 ---
 
-## 🛠️ Tech Stack  
+## Tech Stack  
 
 <p>
   <img src="https://skillicons.dev/icons?i=python,tensorflow" />
@@ -33,22 +33,22 @@ It leverages:
 
 ---
 
-## 🔬 Methodology  
+## Methodology  
 
-### 1️⃣ Data Preparation  
+### 1️) Data Preparation  
 - Dataset: **SMILES formulas + compound labels**  
 - Features:  
   - Encoded compound name (`LabelEncoder`)  
   - `MolecularWeight`, `NumHeavyAtoms` (from RDKit)  
 - Target: `class_tox21` (toxic vs non-toxic)  
 
-### 2️⃣ Model Architecture  
+### 2️) Model Architecture  
 - Input layer → 32 neurons, LeakyReLU  
 - Hidden layers → 128 → 64 → 32 → 16 neurons (LeakyReLU)  
 - Dropout(0.5) for regularization  
 - Output → 1 neuron, **Sigmoid** activation  
 
-### 3️⃣ Training & Evaluation  
+### 3️) Training & Evaluation  
 - Optimizer: `Adam(0.001)`  
 - Loss: `Binary Crossentropy`  
 - Metrics: Accuracy, Precision, F1  
@@ -59,7 +59,7 @@ It leverages:
 
 ---
 
-## 📊 Results  
+## 4) Results  
 
 <p align="center">
   <img src="https://img.shields.io/badge/Accuracy-82.4%25-brightgreen?style=for-the-badge" />
@@ -69,9 +69,9 @@ It leverages:
 
 ---
 
-## 🚀 Application  
+## 5) Application  
 
-We applied the trained model on a **real dataset of food & vape additives**.  
+We applied the trained model on a **real dataset of various market foods & vape additives**.  
 
 **Predictions Example:**  in plots safe is labeled as green, suspicious compounds are yellow and high risk ones are labeled in red
 
